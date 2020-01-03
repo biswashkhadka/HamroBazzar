@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".TermsUI.AdRulesActivity">
+
+    <TextView
+        android:id="@+id/tvRules"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Hamrobazar does not allow posting of ads that are considered illegal as per Nepalese law and/or are not permitted as per below Ad posting rules. Any user found violating these rules will be subjected to action/s mentioned below.
+
+1. Multiple (duplicate/repeat) ad posting.
+Users are not allowed to post more than 1 (one) similar active ad. Similar active ad are defined as ads selling or looking for same product or service, even if these ad contain different text or images and/or is posted from same or different account by a user.
+
+Each user is only allowed to post an ad similar to his/her previous ad if the previous one has been marked as sold, has been deleted or has already expired.
+
+2. Misleading and fraudulent ads.
+Some of the ads (but not limited) which fall under this are:
+
+    Ads title, price and content must be related. For e.g. posting ad with title Iphone 5 with irrelevant price Rs. 200 is not allowed.
+    Ads title should not include Price or Phone numbers, there is separate field for that.
+    Ads posted with marketing gimmick words with sole purpose of grabbing other user attention. For e.g. posting ad Best opportunity of your life, Click this to earn money, Call me soon, Dont miss out etc.
+    Ads with Inaccurate/wrong prices. You need to clearly mention the price in your ad. For e.g. posting ad with price Rs. 5,000 but when later contacted you are asking another price.
+    Ads with Incorrect/wrong item condition mentioned. For e.g. posting used goods as Brand New, not disclosing defectiveness of goods.
+    Ads selling stolen and illegal goods.
+    Ads selling fake, replica and counterfeited goods by representing them as original.
+    Ads with sole purpose of leading user to another website or generate downloads without actual sale of product or service.
+    Ads which have Images unrelated with the ad content. Posting graphic (violent or adult oriented) images are not allowed."
+
+        />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Go Back"
+        android:textStyle="italic"
+        android:shadowColor="@android:color/transparent"
+        android:padding="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"
+        android:background="#04abd1"/>
+
+</LinearLayout>

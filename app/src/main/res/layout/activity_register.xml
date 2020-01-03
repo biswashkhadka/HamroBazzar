@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email address:"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="14dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="14dp"
+            android:backgroundTint="#04abd1"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full name:"
+            android:textStyle="bold"
+            android:layout_marginLeft="14dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/etFullname"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="14dp"
+            android:backgroundTint="#04abd1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password (between 6 and 20 chars):"
+            android:textStyle="bold"
+            android:layout_marginLeft="14dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/etPasswordR"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="14dp"
+            android:backgroundTint="#04abd1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password:"
+            android:textStyle="bold"
+            android:layout_marginLeft="14dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/etConfirmPass"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="14dp"
+            android:backgroundTint="#04abd1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textStyle="bold"
+            android:layout_marginLeft="14dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="14dp"
+            android:backgroundTint="#04abd1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile Phone"
+            android:textStyle="bold"
+            android:layout_marginLeft="14dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/etMobile"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="14dp"
+            android:backgroundTint="#04abd1"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="14dp"
+            android:text="Enter 10 digit Mobile No. starting with 9xxxxxxxxx"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address 1 (Street Name):"
+            android:textStyle="bold"
+            android:layout_marginLeft="14dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/etAddress1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="14dp"
+            android:backgroundTint="#04abd1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address 2 (Area Location):"
+            android:textStyle="bold"
+            android:layout_marginLeft="14dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/etAddress2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="14dp"
+            android:backgroundTint="#04abd1"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="14dp"
+            android:text="E.g Kupondole, New Baneshwor, etc"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address 3 (City Name):"
+            android:textStyle="bold"
+            android:layout_marginLeft="14dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+
+        <Spinner
+            android:id="@+id/spinAddress3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="14dp"
+            android:backgroundTint="#04abd1"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subscribe / Hide Phone:"
+            android:textStyle="bold"
+            android:layout_marginLeft="14dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+
+        <CheckBox
+            android:id="@+id/chk1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="I do not want to subscribe to site newsletter."
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="14dp"
+            android:textSize="12dp"
+            android:backgroundTint="#04abd1"
+            />
+        <CheckBox
+            android:id="@+id/chk2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-14dp"
+            android:text="Hide my phone number (only contact me through email)"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="14dp"
+            android:textSize="12dp"
+            android:backgroundTint="#04abd1"
+            />
+
+        <CheckBox
+            android:id="@+id/chk3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="I have read and agree to terms of use. *"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="14dp"
+            android:textSize="17dp"
+            android:backgroundTint="#04abd1"
+            />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="#04abd1"
+            android:padding="15dp"
+            android:shadowColor="@android:color/transparent"
+            android:text="Register"
+
+            android:textColor="#FFFFFF"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>
+

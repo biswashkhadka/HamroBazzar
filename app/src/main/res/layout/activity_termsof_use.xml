@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TermsUI.TermsofUseActivity">
+
+
+    <TextView
+        android:id="@+id/tvTerms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terms of Use
+
+        Welcome to hamrobazar.com
+        By using Hamrobazar through website or from any electronic devices (like but not limited to mobile phone application), you acknowledge, understand and agree to following Terms of Use (Terms).
+
+        Privacy Policy
+
+        Protecting privacy is important to us but due to the nature of our business, some functions and services offered through our site requires user to provide certain personal information such as name, email address, contact address, phone numbers, etc for communication purpose and such information collected are provided to us voluntarily. Some of this information is displayed publicly in Internet and may be used by third parties, on whom we do not have any control. Similarly some of personal information is shared with other users in order to facilitate communication.
+
+    Some of computer data are involuntarily collected by our system in order to ensure proper functioning of our services. These data includes cookies, user IP address, site browsing behavior, page traffic and information related to computer, browser, screen, etc. Third party vendor, including Google may also collect these data in order to display ads based user behavior.
+
+    We use collected information and data to provide our services, facilitate communication between users, customize information, communicate marketing and promotional offers (which you can opt out anytime), display third parties advertisements, identify user, market research, troubleshoot and improve or develop our system.
+
+    We do not and sell or rent users personal information to third parties without users explicit consent. However we may be required from time to time to disclose users personal information to Governmental or law enforcement authorities. We may also disclose personal information to enforce our policies regarding to claims made by others for violation of their rights, privacy and property. We may share some part of your personal information with our service provider (including but not limited to mobile network operators, hosting providers, etc), who helps us in functioning of our business and technical operations.
+"
+
+        />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Go Back"
+        android:textStyle="italic"
+        android:shadowColor="@android:color/transparent"
+        android:padding="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"
+        android:background="#04abd1"/>
+
+</LinearLayout>

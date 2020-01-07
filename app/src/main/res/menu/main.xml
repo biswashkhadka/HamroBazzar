@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+
+    <item
+        android:id="@+id/miProfile"
+        android:icon="@drawable/ic_person_black_24dp"
+        app:showAsAction="always"
+        android:title="Profile"
+        android:orderInCategory="100"
+        >
+    </item>
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_menu"
+        android:orderInCategory="100"
+        android:title="Help"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_safety"
+        android:orderInCategory="100"
+        android:title="Safety Tips"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_rules"
+        android:orderInCategory="100"
+        android:title="Posting Rules"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_terms"
+        android:orderInCategory="100"
+        android:title="Terms of Use"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_contact"
+        android:orderInCategory="100"
+        android:title="Contact Us"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="About"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="100"
+        android:title="Share Hamrobazar App"
+        app:showAsAction="never" />
+</menu>

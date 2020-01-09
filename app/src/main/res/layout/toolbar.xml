@@ -16,12 +16,19 @@
         app:titleTextColor="@android:color/white"
         android:background="#FFFFFF">
 
+
+
         <ImageView
 
             android:id="@+id/img"
             android:layout_width="240dp"
             android:layout_height="50dp"
             android:src="@drawable/hlogo" />
+        <ImageView
+            android:id="@+id/profile"
+            android:src="@drawable/ic_person_black_24dp"
+            android:layout_width="60dp"
+            android:layout_height="50dp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

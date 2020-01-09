@@ -10,7 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.biswash.hamrobazzar.Bll.LoginBll;
 import com.biswash.hamrobazzar.fragments.Homefragment;
+import com.biswash.hamrobazzar.strictmode.StrictModeClass;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText etUsername, etPassword;
@@ -26,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
         btnLogin = findViewById(R.id.btnLogin);
-        btnSignup = findViewById(R.id.btnRegister);
+       /* btnSignup = findViewById(R.id.btnRegister);
 
         btnSignup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,29 +39,37 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
 
             }
-        });
+        });*/
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SaveUsernamePassword();
+                login();
 
-                Intent intent = new Intent(LoginActivity.this, Homefragment.class);
-                startActivity(intent);
+         /*     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);*/
             }
         });
     }
 
 
-    private void SaveUsernamePassword() {
-        SharedPreferences sharedPreferences = getSharedPreferences("User", MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
+    private void login() {
+        String username = etUsername.getText().toString();
+        String password = etPassword.getText().toString();
 
-        editor.putString("username", etUsername.getText().toString());
-        editor.putString("password", etPassword.getText().toString());
+        LoginBll loginBLL = new LoginBll();
 
-        Toast.makeText(this, "Sucessfylly Login", Toast.LENGTH_SHORT).show();
+        StrictModeClass.StrictMode();
+        if (loginBLL.checkUser(username, password)) {
+            Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+            startActivity(intent);
+            finish();
+            Toast.makeText(this, "Login Successfully", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Either username or password is incorrect", Toast.LENGTH_SHORT).show();
+            etUsername.requestFocus();
+        }
+
+
     }
-
-
 }

@@ -20,6 +20,25 @@
         android:layout_height="match_parent" />
 
 
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="490dp"
+        android:text="Popular Trending Ads"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="More"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:padding="15dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="490dp"
+        android:layout_width="80dp"
+        android:layout_height="47dp"/>
+
     <ViewFlipper
         android:layout_width="match_parent"
         android:layout_height="200dp"

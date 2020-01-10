@@ -19,7 +19,9 @@ import android.widget.ViewFlipper;
 
 import com.biswash.hamrobazzar.api.UserAPI;
 import com.biswash.hamrobazzar.model.ListedAds;
+import com.biswash.hamrobazzar.model.Users;
 import com.biswash.hamrobazzar.url.URL;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -28,7 +30,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class DashboardActivity extends AppCompatActivity {
-    ImageView Profile;
+    ImageView Profile, imgprofileimage;
     ViewFlipper v_flipper;
     private RecyclerView recyclerView;
 
@@ -41,6 +43,10 @@ public class DashboardActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         Profile = findViewById(R.id.profile);
+
+        imgprofileimage = findViewById(R.id.imgprofileimage);
+
+        loadCurrentUser();
 
 
         recyclerView=findViewById(R.id.recyclerView);
@@ -98,6 +104,30 @@ public class DashboardActivity extends AppCompatActivity {
         for (int i = 0; i < image.length; i++){
             flipperImage(image[i]);
         }
+    }
+
+    private void loadCurrentUser() {
+        UserAPI userAPI = URL.getInstance().create(UserAPI.class);
+        Call<Users> usersCall = userAPI.getUserDetails(URL.token);
+
+        usersCall.enqueue(new Callback<Users>() {
+            @Override
+            public void onResponse(Call<Users> call, Response<Users> response) {
+                if (!response.isSuccessful()){
+                    Toast.makeText(DashboardActivity.this, "code", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                String imgPath = URL.imagePath + response.body().getImage();
+
+                Picasso.get().load(imgPath).into(imgprofileimage);
+            }
+
+            @Override
+            public void onFailure(Call<Users> call, Throwable t) {
+                Toast.makeText(DashboardActivity.this, "Error", Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 
     private void openDialog() {

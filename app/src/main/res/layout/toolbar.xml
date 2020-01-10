@@ -24,6 +24,11 @@
             android:layout_width="240dp"
             android:layout_height="50dp"
             android:src="@drawable/hlogo" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgprofileimage"
+            android:layout_width="60dp"
+            android:layout_height="50dp" />
         <ImageView
             android:id="@+id/profile"
             android:src="@drawable/ic_person_black_24dp"

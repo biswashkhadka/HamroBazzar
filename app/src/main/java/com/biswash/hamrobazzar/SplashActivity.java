@@ -21,14 +21,14 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 checkUser();
-                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+                Intent intent = new Intent(SplashActivity.this, DashboardActivity.class);
                 startActivity(intent);
                 finish();
 
             }
 
 
-        }, 2000);
+        }, 3000);
     }
     private void checkUser(){
         SharedPreferences sharedPreferences = getSharedPreferences("User", MODE_PRIVATE);

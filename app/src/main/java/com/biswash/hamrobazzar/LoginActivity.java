@@ -27,7 +27,6 @@ public class LoginActivity extends AppCompatActivity {
         //binding
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
-        btnLogin = findViewById(R.id.btnLogin);
        /* btnSignup = findViewById(R.id.btnRegister);
 
         btnSignup.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +60,7 @@ public class LoginActivity extends AppCompatActivity {
 
         StrictModeClass.StrictMode();
         if (loginBLL.checkUser(username, password)) {
-            Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+            Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
             startActivity(intent);
             finish();
             Toast.makeText(this, "Login Successfully", Toast.LENGTH_SHORT).show();
